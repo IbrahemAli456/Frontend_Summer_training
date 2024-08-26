@@ -1,0 +1,247 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.reservation {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.reservation-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.reservation-form input, .reservation-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 150px;
+}
+
+.team {
+    padding: 20px;
+    background-color: #fff;
+    width: 80%; /* Matching width for both sections */
+    margin: 0 auto; /* Centered the section */
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 150px;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Blog Posts Section */
+.blog-posts {
+    display: flex;
+    width: 80%; /* Adjusted to match 'Our Awesome Team' section width */
+    padding: 40px 0;
+    background-color: #fff;
+    margin: 0 auto; /* Center the section */
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: row; /* Ensure side-by-side layout */
+}
+
+.blog-posts-left {
+    width: 50%; /* Set to 50% for the text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.blog-posts-left h2 {
+    font-size: 2.8rem;
+    margin: 0;
+    align-self: center; /* Centered text */
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.blog-posts-left h2::after {
+    content: 'Explore';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    opacity: 0.3;
+    transform: rotate(-10deg);
+}
+
+.read-all-news-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px; /* Adds space above the button */
+    order: 1; /* Ensures the button is always placed below the title */
+}
+
+.read-all-news {
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    max-width: 150px;
+}
+
+.read-all-news:hover {
+    background-color: #555;
+}
+
+.blog-list {
+    width: 50%; /* Set to 50% for the blog list and photos */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-item {
+    display: flex;
+    gap: 15px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.blog-item img {
+    width: 80px; /* Reduced width */
+    height: 80px; /* Reduced height */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.blog-info {
+    flex: 1;
+}
+
+.blog-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.blog-info p {
+    margin: 0 0 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Footer Section */
+.footer {
+    padding: 20px;
+    background-color: #e0e0e0;
+    width: 80%; /* Matching width */
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-content img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.footer-text {
+    max-width: 300px;
+    text-align: left;
+}
+
+.footer-text h3 {
+    margin: 0 0 10px 0;
+}
+
+.footer-text p {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reservation-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team-members {
+        justify-content: space-around;
+    }
+
+    .blog-posts {
+        flex-direction: column;
+        width: 100%; /* Full width on mobile */
+        padding: 20px;
+    }
+
+    .blog-posts-left {
+        width: 100%;
+        align-items: center;
+    }
+
+    .blog-posts-left h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .read-all-news-container {
+        justify-content: center;
+    }
+
+    .blog-list {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
