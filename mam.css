@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.birds{
+background-color: black;
+color: white;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.header{
+
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar a{
+padding: 25px;
+
+}
+.cofbirds{
+
+    font-size: 30px;
+    font-weight: 700;
+}
+.star a{
+
+    padding-right: 25px ;
+    
+}
+.enjoy{
+    display: flex;
+    border: solid 0.1px black;
+}
+.sip{
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+}
+.sip p{
+
+    font-size: 70px;
+    font-weight: 900;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande'
+}
+.fairtrade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 50px;
+
+}
+.fairtrade p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif}
+.yell{
+
+    background-color: rgb(209, 209, 164);
+   
+    border: solid 0.1px black;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.viewmore{
+    padding: 80px;
+    position: relative;
+    height: fit-content
+    border solid 0.1px black;
+}
+.viewmore h1{
+    font-size: 25px;
+    font-weight: 700;
+
+
+}
+.viewmore p{
+
+padding-top: 30px;
+}
+.viewmore a{
+    position: absolute;
+    bottom: 70px;
+
+
+}
+.arabica{
+    border: solid 0.1px black;
+    width: 500px;
+
+}
+.santa{
+    border: solid 0.1px black;
+    width: 500px;
+}
+.arabica p{
+    padding: 20px;
+}
+.santa p{
+    padding: 20px;
+
+}
+.morethan{
+    
+position: relative;
+
+}
+.morethan img{
+    width:1903px;
+
+    position: absolute;
+    z-index: 1;
+}
+.morethan h1{
+    left: 550px;
+    top: 373.165px;
+    z-index: 3;
+    font-size: larger;
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+}
+.hakim{
+    display: flex;
+    
+}
+.star i{
+    border:solid 0.1px black;
+    padding: 10px;
+}
+.back{
+
+    background-color: black;
+    height: 745px;
+}
+.finaly{
+
+    display: flex;
+    border: 1px solid black;
+    
+    
+    
+    
+}
+.henry{
+   
+    font-size: 30px;
+    
+    display: grid;
+    max-height: 879px;
+}
+.henry p{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 200px
+    
+    
+}
+.henry span{
+    
+    font-size: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 320px;
+    
+
+}
+.love{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 290px;
+    padding-bottom: 20px;
+}
+.manga{
+    gap: 30px;
+}
+@media (max-width:762px) {
+    
+    .header{
+        
+        display: grid;
+        gap: 30px;
+
+        
+    }
+    .star{
+        display: grid;
+        gap: 20px;
+    }
+    .navbar{
+        display: grid;
+       
+        
+    }
+    .birds{
+       width: 100%;
+        height: 100%;
+        padding: 20px;
+        
+        
+    }
+    .enjoy{
+        border: none;
+        display: grid;
+        gap: 40px;
+        
+    }
+    .enjoy img{
+        max-width: 60%;
+    }
+    .fairtrade{
+
+        max-width: 400px;
+    }
+    .yell{
+        display: grid;
+        border: none;
+        background-color: white;
+        
+
+    }
+    .hakim{
+        display: grid;
+        border: none;
+        
+    }
+    .viewmore{
+        max-width: 60%;
+    }
+    .viewmore a{
+        margin: -30px;
+    }
+    .morethan h1{
+        top: 130px;
+        
+        
+    
+    }
+    .morethan img{
+        max-width: 2200px;
+        
+    
+        
+    }
+    .back{
+        background-color: white;
+    }
+    .finaly{
+        border: none;
+        display: grid;}
+    }
+    @media(min-width:763px) and (max-width:992px){
+
+    .birds{
+        max-width: 60%;
+    }
+    .header{
+        display: grid;
+        gap: 20px;
+    }
+    .enjoy{
+        display: grid;
+    }
+    .coff img{
+        max-width: 60%;
+    }
+    .fairtrade{
+
+        max-width: 60%;
+    }
+    .hakim{
+        background-color: white;
+        display: grid;
+    }
+    .viewmore{
+        background-color: white;
+        max-width: 60%;
+    }
+    .yell{
+        display: grid;
+        background-color: white;
+    }
+    .viewmore a{
+        margin: -30px;
+
+}
+
+.finaly{
+
+    display: grid;
+    
+    border: none;
+}
+.finaly img{
+    max-width: 60%;
+
+}
+.henry{
+    max-width: 60%;
+}
+    }
+@media(min-width: 993px){
+
+
+}
