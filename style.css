@@ -1,148 +1,225 @@
-.container-fluid {
-    background-color: beige;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    margin: 20px 0;
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Optional padding for some space from the edge */
+}
+
+h2:before,
+h2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #000;
+}
+
+h2:before {
+    top: -10px; /* Line above the text */
+}
+
+h2:after {
+    bottom: -10px; /* Line below the text */
+}
+
+/* Trusted Suppliers Section */
+.trusted-suppliers {
+    text-align: center;
+    margin-bottom: 40px;
     padding: 20px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
 }
 
-
-.sidebar {
-    margin-top: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
-    rotate: 270deg;
-    padding-top: 50px;
-
+.suppliers-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.details {
-    padding-top: 50px;
+.suppliers-logos img {
+    max-width: 120px;
+    margin: 10px 20px;
 }
 
-.coffee-image {
-    height: auto;
-    margin-top: 40px;
+/* Coffee Menu Section */
+.coffee-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    height: auto; /* Ensure flexible height based on content */
+    flex-direction: row-reverse; /* Reverses the order of image and menu */
+}
+
+.menu-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%; /* Ensure image takes the right half */
+}
+
+.menu-image img {
     max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-.sidebar-item {
-    border-bottom: 1px solid black;
-    font-size: larger;
-    padding-bottom: 10px;
-    width: 600px;
+.menu-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50%; /* Ensure menu takes the left half */
+    height: 100%; /* Make the menu's height match the image */
+    padding: 0 20px;
 }
 
-.contact-button {
-    background-color: black;
-    color: white;
-    padding: 15px;
-    border-radius: 12px;
+.menu-items ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute items vertically */
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-.contact-button:hover {
-    background-color: aqua;
+.menu-items ul li {
+    font-size: calc(1.2vw + 1.2vh); /* Adjust text size dynamically to match image height */
+    font-weight: bold;
 }
-  
-.text-center h1 {
+
+.menu-items ul li span {
+    margin-left: 10px;
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.gallery-images img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.footer-left {
     text-align: left;
 }
 
-
-.product-section {
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
+.footer-left img {
+    max-width: 80px;
+    margin-bottom: 10px;
 }
 
-.product-section h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.footer-left p {
+    font-size: 14px;
+    margin-bottom: 8px;
 }
 
-.product {
-    text-align: center;
-    padding-top: 20px;
+.footer-center, .footer-right {
+    text-align: left;
 }
 
-.product img {
-    height: auto;
-    width: 100%;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #f9f9f9;
+.footer-center ul, .footer-right ul {
+    list-style: none;
 }
 
-.product p {
-    margin: 10px 0;
-    font-size: 16px;
+.footer-center ul li, .footer-right ul li {
+    margin-bottom: 8px;
 }
 
-.new::before,
-.sold::after {
-    padding: 5px;
-    font-size: 12px;
-    position: absolute;
-    top: 10px;
-}
-
-.new::before {
-    content: "NEW";
-    background-color: yellow;
-    color: black;
-    left: 10px;
-}
-
-.sold::after {
-    content: "SOLD";
-    background-color: black;
-    color: white;
-    right: 10px;
-}
-
-.food {
-    margin-top: 20px;
-}
-
-.left-section h1 {
-    font-size: xx-large;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-.strikethrough {
-    text-decoration: line-through;
-}
-
-
-
-.box {
-    background-color: #fff1db;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid black;
-    height: 100%;
-}
-
-.box h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-}
-
-.box p {
-    margin-top: 10px;
-    color: #555;
-}
-
-.view-more {
+.footer-center ul li a, .footer-right ul li a {
     text-decoration: none;
-    font-weight: bold;
     color: #000;
-    margin-left: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
-.view-more:hover {
+.footer-center ul li a:hover, .footer-right ul li a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design Enhancements */
+
+/* For screens 576px and below */
+@media (max-width: 576px) {
+    .trusted-suppliers img {
+        max-width: 70px; /* Smaller logo size */
+    }
+
+    .coffee-menu {
+        padding: 10px;
+        flex-direction: column; /* Stack menu and image vertically */
+    }
+
+    .menu-items ul li {
+        font-size: 16px;
+    }
+
+    .gallery-images {
+        grid-template-columns: repeat(1, 1fr); /* Single column for images */
+        gap: 15px;
+    }
+    
+    .footer-container {
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+/* For larger screens between 768px and 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+    .gallery-images {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
